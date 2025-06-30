@@ -3,6 +3,8 @@
 > JSP 기반의 강의 수강, 프로젝트 매칭, 멘토링 기능이 포함된 웹 플랫폼  
 > 화면설계서, ERD, 요구정의서 등 **모든 산출물 포함**  
 > 팀 협업형 프로젝트로 GitHub와 VSCode 기반으로 공동 개발
+## 🎬 프로젝트 시연 영상
+👉 [YouTube에서 직접 보기](https://www.youtube.com/watch?v=dD76U35wdmM)
 
 ---
 
