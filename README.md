@@ -1,158 +1,116 @@
-# 🎓 EduProject Platform
+# 📚 GDA JSP Project
 
-> 수강 관리 + 팀 프로젝트 매칭 + 멘토링 기능이 통합된 실전형 교육 플랫폼  
-> 강사, 수강생, 관리자, 멘토 모두를 위한 All-in-One 시스템입니다.
+> JSP 기반의 강의 수강, 프로젝트 매칭, 멘토링 기능이 포함된 웹 플랫폼  
+> 화면설계서, ERD, 요구정의서 등 **모든 산출물 포함**  
+> 팀 협업형 프로젝트로 GitHub와 VSCode 기반으로 공동 개발
 
 ---
 
-## 📌 목차 (Table of Contents)
+## 📌 목차
 
 1. [📖 프로젝트 개요](#📖-프로젝트-개요)
-2. [🚀 주요 기능 요약](#🚀-주요-기능-요약)
-3. [🖼️ UI 화면 구성 및 흐름도](#🖼️-ui-화면-구성-및-흐름도)
-4. [🗃️ ERD (Entity Relationship Diagram)](#🗃️-erd-entity-relationship-diagram)
-5. [📄 화면설계서 및 요구사항 명세](#📄-화면설계서-및-요구사항-명세)
-6. [🛠 기술 스택 및 시스템 구조](#🛠-기술-스택-및-시스템-구조)
-7. [📡 API 명세 (Swagger)](#📡-api-명세-swagger)
-8. [💻 설치 및 실행 방법](#💻-설치-및-실행-방법)
-9. [✅ 테스트 내역 및 결과](#✅-테스트-내역-및-결과)
-10. [🎬 프로젝트 시연 영상](#🎬-프로젝트-시연-영상)
-11. [👥 팀 소개 및 역할](#👥-팀-소개-및-역할)
-12. [📎 기타 자료](#📎-기타-자료)
-13. [📄 라이선스](#📄-라이선스)
+2. [🚀 핵심 기능 요약](#🚀-핵심-기능-요약)
+3. [🖼️ UI 화면 설계서](#🖼️-ui-화면-설계서)
+4. [🗃️ 데이터베이스 ERD](#🗃️-데이터베이스-erd)
+5. [📄 요구사항 및 테이블 정의](#📄-요구사항-및-테이블-정의)
+6. [🎬 프로젝트 발표자료](#🎬-프로젝트-발표자료)
+7. [🛠 실행 방법 및 환경](#🛠-실행-방법-및-환경)
+8. [👥 팀 구성 및 역할](#👥-팀-구성-및-역할)
+9. [📎 기타 자료 및 참고](#📎-기타-자료-및-참고)
+10. [📄 라이선스](#📄-라이선스)
 
 ---
 
 ## 📖 프로젝트 개요
 
-| 항목 | 설명 |
+| 항목 | 내용 |
 |------|------|
-| 프로젝트명 | EduProject Platform |
+| 프로젝트명 | GDA JSP Project |
 | 개발 기간 | 2025.04.25 ~ 2025.05.21 |
-| 주요 대상 | 수강생, 강사, 관리자, 멘토 |
-| 핵심 목적 | 실시간 수강, 팀 프로젝트 매칭, 멘토링, 관리자 시스템 제공 |
-| 배포 환경 | VSCode 기반 모노레포 (Spring Boot + React) |
+| 주요 기능 | 회원가입, 로그인, 강의 수강, 팀 프로젝트, 멘토링, 관리자 기능 등 |
+| 개발 방식 | 팀 협업, GitHub 기반 브랜치 전략 운영 |
+| 기술 스택 | JSP, Servlet, JSTL, MySQL, JDBC, MVC 패턴 |
 
 ---
 
-## 🚀 주요 기능 요약
+## 🚀 핵심 기능 요약
 
-| 분류 | 기능 |
-|------|------|
-| 인증 | 회원가입, 로그인, 이메일 인증, 소셜 로그인 (Naver OAuth) |
-| 수강 | 강의 등록, 스트리밍 재생, 피드백/평점 |
-| 게시판 | 강의 게시판, 질문/문의 게시판, 댓글/답글 |
-| 결제 | 장바구니, 결제 처리, 결제 성공/실패 안내 |
-| 프로젝트 | 팀 모집, 태그 필터링, 매칭 관리 |
-| 멘토링 | 게시판 작성, 멘토 답변, 멘토 신청 |
-| 관리자 | 회원/강의/게시판 관리, 권한 변경 |
+- 📌 회원가입 / 로그인 / 이메일 인증
+- 🎓 강의 등록, 수강, 피드백 및 평점
+- 📂 게시판: 강의 / 프로젝트 / 문의 / 멘토링
+- 🧑‍🤝‍🧑 팀 프로젝트 매칭 시스템
+- 🧑‍🏫 멘토 지원 및 게시판 피드백
+- ⚙️ 관리자 페이지: 전체 회원/강의 관리
 
 ---
 
-## 🖼️ UI 화면 구성 및 흐름도
+## 🖼️ UI 화면 설계서
 
-```mermaid
-flowchart TD
-    Login[로그인] --> Main[메인 대시보드]
-    Main --> Lectures[강의 목록 및 재생]
-    Main --> Projects[팀 프로젝트 게시판]
-    Main --> Mentoring[멘토링 게시판]
-    Main --> Profile[마이페이지]
-    Main --> Admin[관리자 기능]
+📂 화면 설계에 대한 시각 자료입니다. 각 화면의 레이아웃 및 UX 흐름을 포함합니다.
 
+- [`화면설계서-1.pdf`](https://github.com/DevchannyP/gda_jsp_project/blob/main/docs/%ED%99%94%EB%A9%B4%EC%84%A4%EA%B3%84%EC%84%9C-1.pdf)
+- [`화면설계서-2.pdf`](https://github.com/DevchannyP/gda_jsp_project/blob/main/docs/%ED%99%94%EB%A9%B4%EC%84%A4%EA%B3%84%EC%84%9C-2.pdf)
 
-📎 Figma 시안: 화면설계서.pdf
+> 🔍 로그인, 강의목록, 강의상세, 팀프로젝트 등록, 멘토 신청 등 전체 플로우 포함
 
-🗃️ ERD (Entity Relationship Diagram)
-정규화 기반 ERD (3NF)
+---
 
-주요 테이블: users, lectures, projects, feedback, payments, mentorings 등
+## 🗃️ 데이터베이스 ERD
 
-📎 ERD PDF 다운로드: ERD.pdf
+- [`ERD.png`](https://github.com/DevchannyP/gda_jsp_project/blob/main/docs/ERD.png)  
+> 📌 회원, 강의, 프로젝트, 게시판, 피드백, 멘토링 등 10개 이상의 테이블로 정규화됨
 
-📎 ERD Cloud 공유 링크: https://erdcloud.com/project/eduproject-platform
+---
 
-📄 화면설계서 및 요구사항 명세
-문서명	설명	링크
-화면설계서	전체 UI 구조, 페이지 레이아웃, 컴포넌트 정의 포함	화면설계서.pdf
-요구사항 정의서	기능별 UR/FR/NFR/정책 정의	요구사항정의서.pdf
-작업 WBS	일정, 담당자, 완료율 포함 WBS	WBS-작업현황표.xlsx
+## 📄 요구사항 및 테이블 정의
 
-🛠 기술 스택 및 시스템 구조
-계층	기술
-프론트엔드	React.js (Next.js App Router), Tailwind CSS
-백엔드	Spring Boot 3.x, JPA, Security, JWT
-인증	Naver OAuth, 이메일 인증, 세션+JWT 혼합
-DB	MySQL
-도구	GitHub Actions, Postman, Figma, ERDCloud
+📝 시스템의 요구사항 및 테이블 구조를 구조화하여 정리한 문서입니다.
 
-mermaid
-graph TD
-    User --> FE[Next.js]
-    FE --> API[Spring Boot]
-    API --> DB[(MySQL)]
-    API --> Mail[SMTP 인증]
-    API --> OAuth[Naver OAuth]
-📡 API 명세 (Swagger)
-Swagger 문서 자동 생성 및 실시간 테스트 가능
+- [`요구사항정의서.xlsx`](https://github.com/DevchannyP/gda_jsp_project/blob/main/docs/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EC%A0%95%EC%9D%98%EC%84%9C.xlsx)
+- [`테이블정의서.xlsx`](https://github.com/DevchannyP/gda_jsp_project/blob/main/docs/%ED%85%8C%EC%9D%B4%EB%B8%94%EC%A0%95%EC%9D%98%EC%84%9C.xlsx)
 
-예시: http://localhost:8080/swagger-ui/index.html
+> ✅ 각 테이블의 속성, 제약조건, 관계 등을 포함한 실무형 문서
 
-💻 설치 및 실행 방법
-bash
-# 백엔드 실행
-cd backend
-./gradlew bootRun
+---
 
-# 프론트엔드 실행
-cd frontend
-npm install
-npm run dev
-📎 .env 샘플 포함: env-example
+## 🎬 프로젝트 발표자료
 
-✅ 테스트 내역 및 결과
-기능	담당자	결과
-이메일/소셜 로그인	김준희, 박찬희	✅ 완료
-강의 등록 → 결제 → 수강	김준희	✅ 완료
-멘토링 → 프로젝트 매칭	소정훈	✅ 완료
-관리자 기능 전반	박찬희	✅ 완료
+- [`프로젝트ppt.pdf`](https://github.com/DevchannyP/gda_jsp_project/blob/main/docs/%ED%94%84%EB%A1%9C%EC%A0%9Dppt.pdf)
 
-📎 테스트 목록 전체: 기능별 테스트결과.pdf
+> 발표용 10슬라이드 구성: 프로젝트 개요, UI 시연, ERD, 역할 분담, 개발 후기 등 포함
 
-🎬 프로젝트 시연 영상
-📹 EduProject 시연 영상 (YouTube)
-📎 시연 영상 녹화 파일 (로컬용)
+---
 
-영상은 주요 흐름 (회원가입 → 강의 수강 → 팀 프로젝트 매칭 → 멘토링) 순서로 진행됩니다.
+## 🛠 실행 방법 및 환경
 
-👥 팀 소개 및 역할
-이름	역할	주요 담당
-🧑‍💻 박찬희	Backend 리드	ERD, API, 강의/결제/멘토링/게시판
-👩‍💻 김준희	Frontend 리드	UI 구현, 로그인/회원가입/결제
-👨‍💻 소정훈	Fullstack	팀 프로젝트, 멘토링, 문의 게시판
+```bash
+# 서버 실행 방식 (Tomcat 9.x 기준)
+1. Eclipse 또는 VSCode에서 Dynamic Web Project 로딩
+2. WebContent에 JSP 파일 배치
+3. WEB-INF/web.xml 및 JDBC 연결 설정
+4. MySQL DB 생성 및 초기 데이터 입력
 
-📎 기타 자료
-WBS/일정표: docs/WBS-작업현황표.xlsx
+# DB 설정
+DB Name: gda_jsp
+User: root
+Password: 1234
 
-회고 및 보고서: docs/팀_회고_보고서.pdf
+# 포트 설정
+localhost:8080/gda_jsp_project
 
-GitHub Project Board: 🔗 Link to Kanban
+👥 팀 구성 및 역할
+이름	역할	담당 기능
+박찬희	Fullstack / 기획	ERD 설계, 기능 정의, 강의/결제/멘토링
+김준희	프론트 JSP	회원가입, 로그인, 결제 화면, 마이페이지
+소정훈	백엔드 JSP	팀프로젝트 매칭, 멘토링 게시판, 이메일 인증
+
+📎 기타 자료 및 참고
+📌 📂 docs/ 폴더 전체 보기
+
+📎 GitHub 브랜치 전략: main + 기능별 브랜치(feature/login, feature/project, 등)
+
+🧪 테스트 시나리오 문서(추가 가능 시): tests/ 폴더 또는 Notion 문서 연동
 
 📄 라이선스
-본 프로젝트는 MIT License 하에 공개되어 있으며, 자유롭게 사용/수정 가능합니다. 다만, 상업적 활용 시 출처를 반드시 표시해 주세요.
-
-yaml
-
----
-
-## 📌 참고: `docs` 폴더 구성 예시
-
-/docs
-├── ERD.pdf
-├── 화면설계서.pdf
-├── 요구사항정의서.pdf
-├── WBS-작업현황표.xlsx
-├── 시연영상.mp4
-├── 기능별_테스트결과.pdf
-├── 팀_회고_보고서.pdf
-└── env-example
+본 프로젝트는 MIT 라이선스를 따르며, 자유롭게 활용 가능합니다.
+단, 상업적 사용 시 반드시 저작자 명시 및 원문 링크를 포함해 주세요.
