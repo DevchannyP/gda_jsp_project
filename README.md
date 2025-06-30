@@ -98,6 +98,8 @@ Password: 1234
 # 포트 설정
 localhost:8080/gda_jsp_project
 
+```
+
 👥 팀 구성 및 역할
 이름	역할	담당 기능
 박찬희	Fullstack / 기획	ERD 설계, 기능 정의, 강의/결제/멘토링
