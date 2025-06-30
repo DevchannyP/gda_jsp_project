@@ -75,7 +75,7 @@
 
 ## 🎬 프로젝트 발표자료
 
-- [`프로젝트ppt.pdf`](https://github.com/DevchannyP/gda_jsp_project/blob/main/docs/%ED%94%84%EB%A1%9C%EC%A0%9Dppt.pdf)
+- [`프로젝트ppt.pdf`](https://github.com/DevchannyP/gda_jsp_project/blob/main/docs/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8ppt.pdf)
 
 > 발표용 10슬라이드 구성: 프로젝트 개요, UI 시연, ERD, 역할 분담, 개발 후기 등 포함
 
