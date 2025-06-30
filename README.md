@@ -87,8 +87,6 @@ DB	MySQL
 도구	GitHub Actions, Postman, Figma, ERDCloud
 
 mermaid
-복사
-편집
 graph TD
     User --> FE[Next.js]
     FE --> API[Spring Boot]
@@ -102,8 +100,6 @@ Swagger 문서 자동 생성 및 실시간 테스트 가능
 
 💻 설치 및 실행 방법
 bash
-복사
-편집
 # 백엔드 실행
 cd backend
 ./gradlew bootRun
