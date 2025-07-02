@@ -132,8 +132,7 @@ src/sql/ 경로에 테스트용 insert 쿼리 포함
 | 항목 | 내용 |
 | --- | --- |
 | 테스트 플로우 | 로그인 → 수강 신청 → 장바구니 → 결제 → 관리자 승인 |
-| GitHub 전략 | `main` + `feature/{기능}` 브랜치 운영 |
-| 커밋 규칙 | `feat:`, `fix:`, `docs:` 등 [Conventional Commits](https://www.conventionalcommits.org/) |
+| GitHub 전략 | `main` + `pch` 책임 브랜치 운영 |
 
 ---
 
