@@ -144,6 +144,25 @@ MIT License
 단, 반드시 **저작자 표기** 및 **GitHub 출처 링크 명시** 필요
 ```
 
+
+## 📎 관련 프로젝트 링크 모음 (CHAP 01~10)
+
+> 다른 JSP 프로젝트들도 함께 보고 싶다면 아래 링크를 참고해보세요.
+
+| CHAP 번호 | 링크 |
+| -------- | ---- |
+| CHAP-01 | [CHAP-01-project01](https://devchannyp.github.io/project/project-log/CHAP-01-project01/) |
+| CHAP-02 | [CHAP-02-project01](https://devchannyp.github.io/project/project-log/CHAP-02-project01/) |
+| CHAP-03 | [CHAP-03-project01](https://devchannyp.github.io/project/project-log/CHAP-03-project01/) |
+| CHAP-04 | [CHAP-04-project01](https://devchannyp.github.io/project/project-log/CHAP-04-project01/) |
+| CHAP-05 | [CHAP-05-project01](https://devchannyp.github.io/project/project-log/CHAP-05-project01/) |
+| CHAP-06 | [CHAP-06-project01](https://devchannyp.github.io/project/project-log/CHAP-06-project01/) |
+| CHAP-07 | [CHAP-07-project01](https://devchannyp.github.io/project/project-log/CHAP-07-project01/) |
+| CHAP-08 | [CHAP-08-project01](https://devchannyp.github.io/project/project-log/CHAP-08-project01/) |
+| CHAP-09 | [CHAP-09-project01](https://devchannyp.github.io/project/project-log/CHAP-09-project01/) |
+| CHAP-10 | [CHAP-10-project01](https://devchannyp.github.io/project/project-log/CHAP-10-project01/) |
+
+
 ---## 🔗 참고 및 산출물 폴더
 
 | 항목 | 링크 |
